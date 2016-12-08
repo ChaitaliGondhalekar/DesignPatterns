@@ -1,0 +1,14 @@
+class Mysingleton
+{
+public:
+    static Mysingleton *Instance()
+    {
+        if(_instance == 0)
+        {
+            _instance = new Mysingleton();
+        }
+        
+        return _instance;
+    }
+
+}
