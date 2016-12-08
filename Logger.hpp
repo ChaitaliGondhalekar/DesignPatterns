@@ -7,6 +7,7 @@ public:
      bool openLogFile(std::string logFile);
      void writeToLogFile();
      bool closeLogFile();
+     ~Logger() {};
  
 private:
     Logger(){};
